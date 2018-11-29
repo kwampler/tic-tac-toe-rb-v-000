@@ -18,7 +18,11 @@ end
 def input_to_index(user_input)
   user_input.to_i - 1
 end
+<<<<<<< HEAD
 def move(board, index, token)
+=======
+def move(board, index, token = "X")
+>>>>>>> 8241c5fc9b0697173d32b0155f6fea516bd26a78
   board[index]  = token
 end
 def position_taken?(board, index)
@@ -96,10 +100,14 @@ if won?(board)
 end
 end
 def play(board)
+<<<<<<< HEAD
     turn(board) until over?(board) || draw?(board)
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   else draw?(board)
     puts "Cat's Game!"
   end
+=======
+    turn(board) until over?(board)
+>>>>>>> 8241c5fc9b0697173d32b0155f6fea516bd26a78
 end
